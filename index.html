@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kasir Toko Sederhana</h1>
+        <from id="fromBelanja">
+            <div class="form-group">
+                <label for="namaBarang">Nama Barang:</label>
+
+                <input type="teks" id="namaBarang" placeholder="contoh:Pensil" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hargaSatuan">Harga Satuan (Rp):/label>
+                
+                <input type="number" id="hargaSatuan" placeholder="Contoh: 5000" min="0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="jumlahBarang">Jumlah Barang:</label>
+
+                <input type="number" id="jumlahBarang" Placeholder="Contoh: 3" min="1" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="totalHarga">Total Harga Otomatis (Rp):</label>
+
+                <input type="teks" id="totalHarga" class="input-readonly" readonly>
+            </div>
+
+            <button type="submit" class="btn">Tambah ke Daftar Belanja</button>
+        </from>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Harga Satuan</th>
+                    <th>Jumlah</th>
+                    <th>Total Harga</th>
+                </tr>
+            </thead>
+            <tbody id="tabelBelanja">
+            </tbody>
+        </table>
+
+        <div class="total-keseluruhan" id="infoTotalSemua">
+            Total Belanja Keseluruhan: Rp 0
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
